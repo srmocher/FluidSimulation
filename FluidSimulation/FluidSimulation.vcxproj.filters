@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="DLLInterface.cpp" />
+    <ClCompile Include="FluidSimulationMain.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="SphContainer.cpp" />
+    <ClCompile Include="LoadShaders.cpp" />
+    <ClCompile Include="MarchingCubes.cpp">
+      <Filter>MarchingCubes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="DLLInterface.h" />
+    <ClInclude Include="Headers.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="SphContainer.h" />
+    <ClInclude Include="LoadShaders.h" />
+    <ClInclude Include="Grid.h">
+      <Filter>MarchingCubes</Filter>
+    </ClInclude>
+    <ClInclude Include="MarchingCubes.h">
+      <Filter>MarchingCubes</Filter>
+    </ClInclude>
+    <ClInclude Include="sph.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{7b9847ba-ec8f-40cd-944a-31e03f6fd5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MarchingCubes">
+      <UniqueIdentifier>{72ccbae4-ce94-4588-a7ae-24f9ee52f5af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\FINAL_RENDER_SHADER_FS.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\FINAL_RENDER_SHADER_VS.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\POINT_FS.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\POINT_VX.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\SMOOTH_FS.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\SMOOTH_VX.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\sky_box_shader.vs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\sky_box_shader.fs">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\RawShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="shader\RawShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="sph.cu" />
+  </ItemGroup>
+</Project>
